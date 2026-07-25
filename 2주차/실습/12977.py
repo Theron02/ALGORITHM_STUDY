@@ -29,9 +29,10 @@ def is_prime(n):
 
 def solution(nums):
     answer = 0
-    for i in range(len(nums)):
-        for j in range(i+1, len(nums)):
-            for k in range(j+1, len(nums)):
+    size = len(nums)
+    for i in range(size):
+        for j in range(i+1, size):
+            for k in range(j+1, size):
                 if is_prime(nums[i] + nums[j] + nums[k]):
                     answer += 1
     return answer
