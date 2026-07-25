@@ -1,6 +1,6 @@
 # 연속된 중복 숫자 제거
-# len(answer)에 길이가 0일때는 arr[i]를 넣고, 
-# answer[-1]과 arr[i]가 같지 않으면 arr[i]를 answer에 넣음.
+# answer에 arr[i]를 넣고, 
+# answer[i]와 answer[i-1]이 같으면 pop()으로 제거
 
 def solution(arr):
     answer = []
